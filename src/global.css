@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 16px;
+    background-color: var(--color-gray);
+}
+
+.card {
+    background-color: var(--color-white);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    width: 100%;
+    max-width: 400px;
+}
+
+header {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 16px;
+    border-radius: 8px 8px 0 0;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+:root {
+    --color-primary: #4CAF50;
+    --primary-dark: #2c682e;
+    --color-secondary: #e0ebe0;
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-gray: #b3aeae;
+    
+}
