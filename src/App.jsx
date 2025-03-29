@@ -22,13 +22,20 @@ function App() {
     }
   };
 
+  const resetAll = () => {
+    setHeight('');
+    setWeight('');
+    setBmi(null);
+    console.log('reset');
+  }
+
   return (
     <div className='container'>
       <div className='card'>
         <header>
           <h1 className={styles.title}>BMI Calculator</h1>
         </header>
-        <Form height={height} setHeight={setHeight} weight={weight} setWeight={setWeight} calcBmi={calcBmi}></Form>
+        <Form height={height} setHeight={setHeight} weight={weight} setWeight={setWeight} calcBmi={calcBmi} resetAll={resetAll}></Form>
         <Result bmi={bmi} />
       </div>
     </div>
